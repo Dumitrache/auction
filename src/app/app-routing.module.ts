@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'create-announcement',
+    loadChildren: () => import('./pages/create-announcement/create-announcement.module').then( m => m.CreateAnnouncementPageModule)
+  },
 ];
 
 @NgModule({

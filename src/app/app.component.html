@@ -1,3 +1,9 @@
 <ion-app>
   <ion-router-outlet></ion-router-outlet>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" [routerLink]="['create-announcement']" routerLinkActive="router-link-active" >
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-app>
